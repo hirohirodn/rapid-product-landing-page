@@ -1,0 +1,13 @@
+div.body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.first-section-wrapper{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+div.bene-container{}
+

@@ -1,0 +1,21 @@
+div.we-do-more-4-u{
+    padding: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+div.we-do-more-4-u a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.we-do-more-4-u a:hover{
+    text-decoration: underline;
+    color: var(--secondaryColor);
+}
+
+@media (max-width: 782px){
+    div.we-do-more-4-u{
+        padding: 50px;
+    }
+}

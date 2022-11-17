@@ -1,0 +1,31 @@
+div.bene-help{
+    width: 100%;
+    padding: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.bene-help div h2{
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+div.bene-help div h3{
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+div.bene-help div p{
+    margin-bottom: 0;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+@media (max-width: 782px){
+    div.bene-help{
+        padding: 50px;
+    }
+}

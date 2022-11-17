@@ -1,0 +1,254 @@
+
+
+div.header{
+    width: 100%;
+    background-color: var(--mainColor);
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    z-index: 1000;
+}
+
+div.header div.wrapheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+div.logo{
+    width: 250px;
+    display: inline-block;
+    padding: 20px 20px 0px 80px;
+}
+
+h1.logo{
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    width: 90%;
+    height: 50px;
+    font-size: 22px;
+    padding-left: 52px;
+    background: url('../../assets/images/rdd-icon.png') no-repeat ;
+    background-size: 50px;
+}
+
+div.menu{
+    width: 628px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+ul.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+/* ul.menu li{
+    display: inline-block;
+} */
+ul.menu li a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+ul.menu li a:hover{
+    color: var(--secondaryColor);
+}
+
+img.language{
+    height: 30px;
+    width: 30px;
+    background: url('../../assets/images/en.svg');
+    background-size: 30px 30px;
+    border-radius: 100%;
+    margin: 0 5px 0px 20px;
+    object-fit: cover;
+}
+
+div.language{
+    width: 130px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    cursor: pointer;
+}
+
+/* .border{
+    background-color: red;
+    width: 0px;
+    height: 0px;
+    border-bottom: 50px solid white;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+} */
+
+ul.language {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 10px 0 10px;
+    box-shadow: 0 0.5rem 1rem #0000003b;
+    border-radius: 10%;
+    width: 133px;
+    height: 100px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 95px;
+    box-sizing: border-box;
+}
+
+ul.language::before{
+    content: "";
+    position: absolute;
+    left: calc(50% - 10px);
+    top: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom: 15px solid var(--mainColor);
+}
+
+ul.language li{
+    width: 113px;
+    height: 38px;
+    padding: 5px 18px;
+    border-radius: 10px;
+    color: white;
+}
+
+ul.language li img{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    left: -10px;
+    background-size: 15px 15px;
+    border-radius: 100%;
+}
+
+ul.language li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul.language li:hover{
+    background-color:rgba(0, 0, 0, 0.218) ;
+}
+
+ul.language li#check{
+    background-color:rgba(0, 0, 0, 0.218) ;
+}
+
+/* div.header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+
+} */
+div.wrap-menu input{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 780px) {
+
+    div.wrap-menu{
+        width: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--mainColor);
+        color: #cdcdcd;
+        height: 80px;
+        z-index: 5;
+        font-weight: 400;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    ul.menu{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    ul.menu li{
+        padding: 10px 0 10px 0;
+    }
+
+    div.menu{
+        position: absolute;
+        box-sizing: border-box;
+        height: 735px;
+        width: 300px;
+        top: 30px;
+        right: 0;
+        margin: -20px;
+        padding: 75px 0px;
+        background: var(--mainColor);
+        flex-direction: column-reverse;
+        display: none;
+    }
+
+    div.wrap-menu input{
+        display: block;
+        width: 35px;
+        height: 25px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    div.wrap-menu span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+    }
+
+    div.language{
+        position: absolute;
+        left: 20px;
+        top: 0px;
+        height: 60px;
+        width: 130px;
+        justify-content: left;
+    }
+
+    ul.language{
+        background-color: white;
+        top: 85px
+    }
+
+    ul.language li a{
+        color: black;
+    }
+    ul.language::before{
+        border-bottom: 15px solid white;
+    }
+
+    #check:checked ~ .menu{
+        display: initial;
+    }
+}
